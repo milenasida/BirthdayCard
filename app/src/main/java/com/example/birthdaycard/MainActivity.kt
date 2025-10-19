@@ -40,7 +40,7 @@ class MainActivity : ComponentActivity() {
 fun BirthdayCard(modifier: Modifier = Modifier) {
     Box(modifier = modifier.fillMaxSize()) {
 
-        // Фон из drawable: файл должен называться birthday_bg.webp/png
+
         Image(
             painter = painterResource(R.drawable.birthday_bg),
             contentDescription = stringResource(R.string.image_desc),
@@ -48,14 +48,14 @@ fun BirthdayCard(modifier: Modifier = Modifier) {
             contentScale = ContentScale.Crop
         )
 
-        // Лёгкое затемнение для читабельности текста
+
         Box(
             modifier = Modifier
                 .fillMaxSize()
                 .background(Color.Black.copy(alpha = 0.20f))
         )
 
-        // Текст
+
         Column(
             modifier = Modifier
                 .fillMaxSize()
